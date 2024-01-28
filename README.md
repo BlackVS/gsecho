@@ -92,7 +92,9 @@ TestText5
 
 ### Client
 
-Client sends text from commandline or file using threads, checks echo and show statistics. For UDP keep in mind that if data>MTU-28 they will be fragmented and can arive in other order. In such case they will be count as failed.
+Client sends text from command line or file using threads, checks echo and show statistics. 
+For UDP keep in mind that if data>MTU-28 they will be fragmented and can arive in other order. In such case they will be count as failed.
+By defualt MTU is 1500 but you can set custom (depending on you real network MTU)
 
 ```
 └─$ ./gsclient.py                                                                                          
